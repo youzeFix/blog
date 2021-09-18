@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>My New Hugo Site</title>
+    <title>有则改之，无则加勉</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
     <meta name="description" content="">
     <meta name="generator" content="Hugo 0.88.1" />
@@ -26,8 +26,8 @@
 
     
     
-      <link href="/blog/posts/index.xml" rel="alternate" type="application/rss+xml" title="My New Hugo Site" />
-      <link href="/blog/posts/index.xml" rel="feed" type="application/rss+xml" title="My New Hugo Site" />
+      <link href="/blog/posts/index.xml" rel="alternate" type="application/rss+xml" title="有则改之，无则加勉" />
+      <link href="/blog/posts/index.xml" rel="feed" type="application/rss+xml" title="有则改之，无则加勉" />
       
     
     
@@ -54,7 +54,7 @@
   <div class="flex-l justify-between items-center center">
     <a href="/blog/" class="f3 fw2 hover-white no-underline white-90 dib">
       
-        My New Hugo Site
+        有则改之，无则加勉
       
     </a>
     <div class="flex-l items-center">
@@ -101,6 +101,30 @@
   <div class="bg-white mb3 pa4 gray overflow-hidden">
     <span class="f6 db">Posts</span>
     <h1 class="f3 near-black">
+      <a href="/blog/posts/protocol/ssltls%E5%8D%8F%E8%AE%AE%E8%BF%90%E8%A1%8C%E6%9C%BA%E5%88%B6%E8%AF%A6%E8%A7%A3/" class="link black dim">
+        SSL/TLS协议运行机制详解
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      什么是TLS TLS（Transport Layer Security，安全传输层)，TLS是建立在传输层TCP协议之上的协议，服务于应用层，它的前身是SSL（Secure Socket Layer，安全套接字层），它实现了将应用层的报文进行加密后再交由TCP进行传输的功能。
+TLS的作用 TLS协议主要解决如下三个网络安全问题。
+ 保密(message privacy)，保密通过加密encryption实现，所有信息都加密传输，第三方无法嗅探； 完整性(message integrity)，通过MAC校验机制，一旦被篡改，通信双方会立刻发现； 认证(mutual authentication)，双方认证,双方都可以配备证书，防止身份被冒充；  TLS的历史   1995: SSL 2.0, 由Netscape提出，这个版本由于设计缺陷，并不安全，很快被发现有严重漏洞，已经废弃。
+  1996: SSL 3.0. 写成RFC，开始流行。目前(2015年)已经不安全，必须禁用。
+  1999: TLS 1.0. 互联网标准化组织ISOC接替NetScape公司，发布了SSL的升级版TLS 1.0版
+  2006: TLS 1.1. 作为 RFC 4346 发布。主要修复了CBC模式相关的如BEAST攻击等漏洞
+  2008: TLS 1.2. 作为 RFC 5246 发布 。增进安全性，目前应该主要部署的版本
+  2015之后: TLS 1.3，还在制订中，支持0-rtt，大幅增进安全性，砍掉了aead之外的加密方式
+  TLS握手过程——密钥协商 SSL协议分为两部分：Handshake Protocol和Record Protocol。其中Handshake Protocol用来协商密钥，协议的大部分内容就是通信双方如何利用它来安全的协商出一份密钥。 Record Protocol则定义了传输的格式。
+由于非对称加密的速度比较慢，所以它一般用于密钥交换，双方通过公钥算法协商出一份密钥，然后通过对称加密来通信，当然，为了保证数据的完整性，在加密前要先经过HMAC的处理。
+    </div>
+  </div>
+</div>
+</div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
       <a href="/blog/posts/my-first-post/" class="link black dim">
         My First Post
       </a>
@@ -118,7 +142,7 @@
     <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
   <div class="flex justify-between">
   <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://youzefix.github.io/blog/" >
-    &copy;  My New Hugo Site 2021 
+    &copy;  有则改之，无则加勉 2021 
   </a>
     <div>
 

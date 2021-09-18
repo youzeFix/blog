@@ -1,4 +1,4 @@
 baseURL = 'https://youzefix.github.io/blog/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = '有则改之，无则加勉'
 theme = "ananke"
